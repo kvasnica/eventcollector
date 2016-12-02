@@ -6,7 +6,6 @@ Local storage of all events for Matlab objects.
 
 The package can be installed by [tbxmanager](http://www.tbxmanager.com):
 ```
-#!matlab
 tbxmanager install eventcollector
 ```
 
@@ -14,7 +13,6 @@ tbxmanager install eventcollector
 
 To update the eventcollector package (and other installed packages as well) to the latest version, use
 ```
-#!matlab
 tbxmanager update
 ```
 
@@ -39,7 +37,6 @@ collection, use `collector.start()`.
 Incomming events can be parsed before they are stored in the
 collector. Parsing can be enabled by 
 ```
-#!matlab
 collector = EventCollector(OBJECT, EVENTNAME, 'EventParser', EPFUN)
 ```
 where `EPFUN` is a function handle which takes the event to be parsed
@@ -53,7 +50,6 @@ Once this limit is reached and a new event arrives, the oldest one is
 removed to make room for the new one. The storage limit can be
 changed by 
 ```
-#!matlab
 collector = EventCollector(OBJECT, EVENTNAME, 'MaxEntries', NEWLIMIT)
 ```
 where `NEWLIMIT` is a positive integer.
